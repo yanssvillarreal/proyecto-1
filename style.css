@@ -48,6 +48,10 @@ header img {
  width: 30px;
 }
 
+.menu {
+ display: none;
+}
+
 .corner-button {
  position: fixed;
  bottom: 20px;
@@ -150,7 +154,7 @@ h2 {
  border: none;
  position: relative;
  bottom: -25px;
- left: 50%;
+ left: 48%;
  cursor: pointer;
  font-size: 20px;
  background-color: var(--ta-button-color-1);
@@ -213,7 +217,8 @@ article > p {
 }
 
 button.view {
- margin-left: 700px;
+ position: relative;
+ left: 45%;
  width: 130px;
  cursor: pointer;
 }
@@ -440,6 +445,16 @@ input {
   background-position: center;
  }
 
+ .menu {
+  display: flex;
+  margin: 20px;
+ }
+
+ .user {
+  position: relative;
+  padding: 0;
+ }
+
  #initial {
   justify-content: space-around;
  }
@@ -451,6 +466,10 @@ input {
  .buttons {
   flex-direction: column;
   margin: 0;
+ }
+
+ .buttons button {
+  width: 200px;
  }
 
  .next {
@@ -539,10 +558,6 @@ input {
   margin-left: 0;
  }
 
- form {
-  flex-wrap: wrap;
- }
-
  .specification {
   padding: 0;
  }
@@ -562,6 +577,20 @@ input {
  }
 }
 
+@media screen and (max-width: 595px) {
+ form {
+  flex-wrap: wrap;
+ }
+
+ .know-more {
+  font-size: var(--ta-font-size-s);
+ }
+
+ .specification {
+  padding: 0;
+ }
+}
+
 @media screen and (min-width: 376px) and (max-width: 768px) {
  header {
   background-image: url(./assets/media\ background-1.jpg);
@@ -569,8 +598,15 @@ input {
   background-position: center;
  }
 
- #initial {
-  justify-content: space-between;
+ .menu {
+  display: flex;
+  margin-right: 20%;
+ }
+
+ .user {
+  position: absolute;
+  right: 30px;
+  padding: 0;
  }
 
  .home {
@@ -616,7 +652,8 @@ input {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 50px 20px;
+  padding: 0;
+  margin: 30px;
  }
 
  .gold {
@@ -631,6 +668,10 @@ input {
 
  .specification ul {
   display: block;
+ }
+
+ .specification ul li {
+  margin: 0;
  }
 
  .info-ta {
@@ -673,5 +714,54 @@ input {
 
  #social-media img {
   margin: 10px;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+ .home {
+  display: none;
+ }
+
+ .menu {
+  display: flex;
+ }
+
+ .user {
+  position: absolute;
+  right: 30px;
+  padding: 0;
+ }
+
+ #tiffany-anna {
+  padding: 225px 100px;
+ }
+
+ aside {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .power {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 30px;
+ }
+
+ .specification {
+  padding: 0;
+ }
+
+ #social-media ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+ }
+
+ #copyright {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
  }
 }
